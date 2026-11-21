@@ -1,8 +1,8 @@
 id = "nikisix.vi-marks"
 name = "Vi Marks"
-version = "0.3.0"
+version = "0.4.0"
 min_herdr_version = "0.9.5"
-description = "Vi-style m{a-z} scrollback marks with '{a-z} and '' jump-back"
+description = "Vi-style scrollback marks: m{a-z} sets, '{a-z} jumps across workspaces and panes, '' jumps back"
 platforms = ["linux", "macos"]
 
 [[actions]]
@@ -16,6 +16,12 @@ id = "prompt-jump"
 title = "Jump to mark (a-z or ')"
 contexts = ["pane"]
 command = ["python3", "marks.py", "prompt", "jump"]
+
+[[actions]]
+id = "prompt-show"
+title = "Show marks"
+contexts = ["pane"]
+command = ["python3", "marks.py", "prompt", "show"]
 
 [[panes]]
 id = "key-reader"
