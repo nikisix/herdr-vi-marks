@@ -1,0 +1,7 @@
+{
+  "name": "vi-marks",
+  "version": "0.1.0",
+  "description": "Vi-style marks and block hops for Claude Code's fullscreen transcript, focus view included",
+  "license": "BSD-2-Clause",
+  "types": "./types/index.d.ts"
+}
